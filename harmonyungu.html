@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandra Keys - Harmoni Ungu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #0039bf;
+            --secondary-color: #ffffff;
+            --light-purple: #e6d4f7;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: rgb(255, 255, 255);
+            background-color: #cbcbcb;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), #ffffff);
+            color: white;
+            padding: 60px 0;
+            
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            margin-bottom: 25px;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-img-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .gallery-img {
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .now-playing {
+            background-color: var(--dark);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .track-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #181818;
+        }
+        
+        .track-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .album-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 8px;
+        }
+        
+        .album-table tr {
+            background-color: white;
+            border-radius: 8px;
+        }
+        
+        .album-table td {
+            padding: 12px 15px;
+            vertical-align: middle;
+        }
+        
+        .album-table tr:first-child td:first-child {
+            border-top-left-radius: 8px;
+        }
+        
+        .album-table tr:first-child td:last-child {
+            border-top-right-radius: 8px;
+        }
+        
+        .album-table tr:last-child td:first-child {
+            border-bottom-left-radius: 8px;
+        }
+        
+        .album-table tr:last-child td:last-child {
+            border-bottom-right-radius: 8px;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .concert-date {
+            background: var(--light-purple);
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .footer {
+            background: var(--primary-color);
+            color: rgb(255, 255, 255);
+            padding: 30px 0 15px;
+        }
+        
+        .purple-badge {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: normal;
+        }
+        
+        .btn-purple {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-purple:hover {
+            background-color: #6c6c6c;
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Hindia</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfMKeJ_jguI4i-sZBkMu9WYyP-4hiSfiXdvw&s" width="190" height="190" style="border-radius: 50%;"/>
+            <h2 class="mb-4">Lutfi aji sultan syah</h2>
+            <p class="lead mb-4">Pelajar - Traveling</p>
+            <button class="btn btn-light btn-lg px-5 py-3 fw-bold">Dengarkan Musik</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="section-title" align="center" text="white">Tentang Saya</h3>
+            <div class="row">
+                <div class="text-center mb-4"></div>
+                    <p class="lead text-center">
+                        Saya adalah murid SMK TEXMACO SEMARANG, Hobby saya adalah Touring motor Traveling Muncak & Mendengarkan musik
+                    </p>
+                    <p class="text-center">
+                        Album lagu yang saya sukai adalah album lagu Hindia
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track List Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="section-title" align="center">Daftar Lagu</h3>
+            
+            <div class="now-playing">
+                <p class="mb-1">Top 3 Lagu fav saya dari band Hindia</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <ul class="list-unstyled track-list">
+                        <li class="d-flex justify-content-between">
+                            <div>
+                                <h5 class="mb-0">1. everything u are</h5>
+                                <p class="mb-0 text-muted">Hindia</p>
+                            </div>
+                            <div class="text-end">
+                                <span>4:57</span>
+                                <span class="badge purple-badge ms-2">PLAY</span>
+                            </div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>
+                                <h5 class="mb-0">2. Kids</h5>
+                                <p class="mb-0 text-muted">Hindia</p>
+                            </div>
+                            <div class="text-end">
+                                <span>4:45</span>
+                                <span class="badge purple-badge ms-2">PLAY</span>
+                            </div>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <div>
+                                <h5 class="mb-0">3. Mata air</h5>
+                                <p class="mb-0 text-muted">Hindia</p>
+                            </div>
+                            <div class="text-end">
+                                <span>5:10</span>
+                                <span class="badge purple-badge ms-2">PLAY</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Album Dreams Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold"></h2>
+                        <h3 class="text-muted"> Hindia</h3>
+                    </div>
+                    
+                    <table class="album-table">
+                        <tr>
+                            <td class="fw-bold">everything u are</td>
+                            <td>Hindia</td>
+                            <td>5:12</td>
+                            <td><span class="badge purple-badge">PLAY</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Kids</td>
+                            <td>Hindia</td>
+                            <td>5:12</td>
+                            <td><span class="badge purple-badge">PLAY</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Mata air</td>
+                            <td>Hindia</td>
+                            <td>4:18</td>
+                            <td><span class="badge purple-badge">PLAY</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Cincin</td>
+                            <td>Hindia</td>
+                            <td>3:56</td>
+                            <td><span class="badge purple-badge">PLAY</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Evaluasi</td>
+                            <td>Hindia</td>
+                            <td>4:25</td>
+                            <td><span class="badge purple-badge">PLAY</span></td>
+                        </tr>
+                    </table>
+                    
+                    <div class="text-center mt-5">
+                        <h4 class="section-title d-inline-block">Galeri</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tgVdR2YHV_lrU1mpJmo-MwSrqc_VV5HOAw&s" class="card-img-top" alt="OASIS ALBUM">
+                        <div class="card-body">
+                            <h5 class="card-title">Kids</h5>
+                            <p class="card-text">Hindia</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273d623688488865906052ef96b" class="card-img-top" alt="OASIS ALBUM">
+                        <div class="card-body">
+                            <h5 class="card-title">Evaluasi</h5>
+                            <p class="card-text">Hindia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273d58121433ea3e6c4822ac494" class="card-img-top" alt="OASIS ALBUM">
+                        <div class="card-body">
+                            <h5 class="card-title">Kita ke sana</h5>
+                            <p class="card-text">Hindia</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273d623688488865906052ef96b" class="card-img-top" alt="DEWA 19">
+                        <div class="card-body">
+                            <h5 class="card-title">Mata air</h5>
+                            <p class="card-text">Hindia</p>
+                       </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273d58121433ea3e6c4822ac494" class="card-img-top" alt="Gun's And Roses">
+                        <div class="card-body">
+                            <h5 class="card-title">Cincin</h5>
+                            <p class="card-text">Hindia</p>
+                      </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Contact & Schedule -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-card">
+                        <h3 class="section-title text-center mb-4">Kontak Saya</h3>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="mb-3">Hubungi Saya</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <i class="bi bi-envelope me-2"></i> ajilutfi02@gmail.com
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-phone me-2"></i> +62 896 6742 1000
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-geo-alt me-2"></i> Semarang, Indonesia
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <h4 class="mb-3">Jadwal Konser Mendatang</h4>
+                                <div class="concert-date">
+                                    <h5 class="mb-1">15 Sept 2023</h5>
+                                    <p class="mb-0">Hindia, Surabaya</p>
+                                </div>
+                                <div class="concert-date">
+                                    <h5 class="mb-1">28 Sept 2023</h5>
+                                    <p class="mb-0">Hindia, Jakarta</p>
+                                </div>
+                                <div class="concert-date">
+                                    <h5 class="mb-1">10 Okt 2023</h5>
+                                    <p class="mb-0">Hindia, Bekasi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h3 class="mb-3">Lutfi aji sultan syah</h3>
+                    <p class="mb-4">High Risk High Return</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
